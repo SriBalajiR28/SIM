@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transactions</title>
+    <link rel="stylesheet" href="transaction.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="top-nav">
+            <a href="dashboard.html">← Back to Dashboard</a>
+        </div>
+
+        <h1>Inventory Transactions</h1>
+
+        <div class="nav-links">
+            <a href="purchase.html">
+                <i class="fas fa-cart-plus"></i> Purchase
+            </a>
+            <a href="sales.html">
+                <i class="fas fa-money-bill-wave"></i> Sale
+            </a>
+        </div>
+
+        <div class="controls">
+            <select id="typeFilter">
+                <option value="ALL">All</option>
+                <option value="PURCHASE">Purchase</option>
+                <option value="SALE">Sale</option>
+            </select>
+            <input type="text" id="searchInput" placeholder="Search by Product ID or Date (YYYY-MM-DD)" />
+        </div>
+
+        <div id="transactionList" class="transaction-list"></div>
+    </div>
+
+    <script src="transaction.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Purchase Product</title>
+    <link rel="stylesheet" href="style1.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+    <div class="container">
+        <!-- 🔙 Back to Dashboard -->
+        <div class="top-nav">
+            <a href="dashboard.html">← Back to Dashboard</a>
+        </div>
+
+        <h1>Purchase Product</h1>
+
+        <div class="nav-links">
+            <a href="transaction.html">
+                <i class="fas fa-list-alt"></i> Transactions
+            </a>
+            <a href="sales.html">
+                <i class="fas fa-money-bill-wave"></i> Sale
+            </a>
+        </div>
+
+        <form id="purchaseForm">
+            <input type="text" id="productId" placeholder="Product ID" required />
+            <input type="number" id="quantity" placeholder="Quantity" required />
+            <button type="submit">Purchase</button>
+        </form>
+
+        <div id="responseBox"></div>
+    </div>
+
+    <script src="purchase.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product Management</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <a href="dashboard.html" class="back-link">← Back to Dashboard</a>
+  <h1>Manage Products</h1>
+
+  <a href="add-product.html" class="add-link">➕ Add New Product</a>
+
+  <input type="text" id="search" placeholder="Search by ID or Name" />
+
+  <form id="product-form">
+    <input type="text" id="id" placeholder="Product ID" required />
+    <input type="text" id="name" placeholder="Product Name" required />
+    <input type="text" id="category" placeholder="Category" required />
+    <input type="number" id="quantity" placeholder="Quantity" required />
+    <input type="number" id="price" placeholder="Price" required />
+    <input type="number" id="lowStockThreshold" placeholder="Low Stock Threshold" required />
+    <button type="submit">Save Product</button>
+  </form>
+
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Category</th>
+        <th>Quantity</th>
+        <th>Price</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody id="product-list"></tbody>
+  </table>
+
+  <div id="stock-summary" class="stock-summary"></div>
+
+  <script src="product.js"></script>
+</body>
+
+</html>

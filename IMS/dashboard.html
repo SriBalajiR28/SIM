@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IMS Dashboard</title>
+  <link rel="stylesheet" href="dashboard.css" />
+</head>
+
+<body>
+  <header>
+    <h1>Smart Inventory Manager</h1>
+  </header>
+
+  <section class="cards">
+    <a href="product.html" class="card-link">
+      <div class="card">
+        <h2>Total Products</h2>
+        <p id="product-count">Loading...</p>
+      </div>
+    </a>
+
+    <a href="product.html?lowStock=true" class="card-link">
+      <div class="card">
+        <h2>Low Stock Alerts</h2>
+        <p id="low-stock-count">Loading...</p>
+      </div>
+    </a>
+
+    <a href="transaction.html" class="card-link">
+      <div class="card">
+        <h2>View Transactions</h2>
+        <p>→</p>
+      </div>
+    </a>
+  </section>
+
+  <script src="dashboard.js"></script>
+</body>
+
+</html>
